@@ -3,6 +3,7 @@
 .navbar{
     height: 100px;
 
+
     .wrapper{
         max-width: 1366px;
         margin: auto;
@@ -27,6 +28,7 @@
         .social{
             display: flex;
             gap: 20px;
+            padding-right: 20px;
 
             img{
                 height: 18px;

@@ -5,27 +5,31 @@ import{motion,useScroll,useSpring, useTransform} from "framer-motion"
 const items=[
     {
         id:1,
-        title:"react commerce",
-        img:'https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nam ullam ad voluptates. Molestias sequi unde dolores '
+        title:"Ryker Foods",
+        img:'/foodapp.png',
+        desc:'Developed a responsive landing page for a food ordering application using React JS and Tailwind CSS',
+        link:'https://ryker-foods.onrender.com'
     },
     {
         id:2,
-        title:"react commerce",
-        img:'https://images.pexels.com/photos/15239/flower-roses-red-roses-bloom.jpg?auto=compress&cs=tinysrgb&w=600',
-        desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nam ullam ad voluptates. Molestias sequi unde dolores '
+        title:"Workout Hero",
+        img:'/workout.png',
+        desc:'developed a Workout Tracker application using the MERN stack. User authentication was implemented using JSON Web Tokens (JWT).',
+        link:'https://workout-tracker-m409.onrender.com'
     },
     {
         id:3,
-        title:"react commerce",
-        img:'https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=600',
-        desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nam ullam ad voluptates. Molestias sequi unde dolores '
+        title:"Ryker Blog",
+        img:'/blog.png',
+        desc:'Built my web application with React.js and integrated Redux for state management, ensuring a scalable and efficient architecture',
+        link:'https://ryker-blog.onrender.com'
     },
     {
         id:4,
-        title:"react commerce",
-        img:'https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=600',
-        desc:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nam ullam ad voluptates. Molestias sequi unde dolores '
+        title:"Task Manager",
+        img:'/TaskManager.png',
+        desc:'Created my very first MERN application - Task Manager' ,
+        link :'https://mern-task-app-nzij.onrender.com'
     },
 ]
 const Single = ({item}) =>{
@@ -46,7 +50,7 @@ const Single = ({item}) =>{
                 <motion.div className='textContainer' style={{y}}>
                     <h2>{item.title}</h2>
                     <p>{item.desc}</p>
-                    <motion.button whileHover={{scale:1.1, transition:{duration:0.5}}} whileTap={{scale:0.9}} className='button'>Demo</motion.button>
+                    <motion.a href={item.link}><motion.button whileHover={{scale:1.1, transition:{duration:0.5}}} whileTap={{scale:0.9}} className='button'>Demo</motion.button></motion.a>
                 </motion.div>
             </div>
         </div>
