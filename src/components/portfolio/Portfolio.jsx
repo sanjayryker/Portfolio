@@ -50,9 +50,8 @@ const Single = ({item}) =>{
                 <motion.div className='textContainer' style={{y}}  >
                     <h2>{item.title}</h2>
                     <p>{item.desc}</p>
-                    <a href={item.link} key={item.link}> Click Here </a>
+                    <a href={item.link} key={item.link}><motion.button whileHover={{scale:1.1, transition:{duration:0.5}}} whileTap={{scale:0.9}} className='button'>Demo</motion.button></a>
                 </motion.div>
-                
             </div>
         </div>
     </section>
